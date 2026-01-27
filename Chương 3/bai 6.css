@@ -1,0 +1,23 @@
+body {
+    background-color: yellow;
+}
+
+h2 {
+    color: red;
+    text-align: center;
+}
+
+.csslagi {
+    font-family: Verdana;
+    color: green;
+}
+
+.so{
+    font-family:Verdana;
+    color:blueviolet;
+}
+
+.hoathi {
+    font-family: 'Times New Roman', Times, serif;
+    color: blue
+}

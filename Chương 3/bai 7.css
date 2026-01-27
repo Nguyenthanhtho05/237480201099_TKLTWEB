@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.all{
+    display: flex;
+    width: 100%;
+    height:100%
+}
+
+.bentrai{
+    padding: 20px;
+    width: 30%;
+    height:100%;
+    background-color:yellow;    
+}
+
+.benphai {
+    padding: 20px;
+    background-color: green;
+    width: 70%;
+    height:100%;
+}

@@ -1,0 +1,21 @@
+h2 {
+    color : red;
+    
+}
+.p1 {
+    
+    size: 14;
+    color: white;
+    background-color: blue ;
+    margin-bottom: 0;
+    margin-bottom: 0;
+}
+
+.p2 {
+
+    size: 14;
+    color: yellow;
+    background-color: brown ;
+    margin-bottom: 0;
+    margin-bottom: -20;
+}

@@ -1,0 +1,30 @@
+h1 {
+    color : red;
+    margin-block: -20px;
+}
+
+h2 {
+    color: blue;
+    
+}
+
+h3{
+    color: green;
+    margin-block: -10px;
+} 
+p {
+    font-family: "Time New Roman", Times, serif;
+    size: 14;
+    font-weight: bold;
+}
+h5 {
+    font-family:'Times New Roman', Times, serif;
+    size: 12;
+    font-weight: bold;
+   
+
+}
+.nen{
+    background-color: yellow;
+    padding :2px;
+}

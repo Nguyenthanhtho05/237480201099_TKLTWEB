@@ -1,0 +1,16 @@
+h1 {
+    color: blue;
+    text-align: center;
+}
+
+ol {
+    font-size: 14px;
+    color: black;
+
+}
+.khung{
+    background-color: pink;
+    border-style: solid;
+    border-width: 5px;
+    margin: 0px
+}
