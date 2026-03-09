@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language = "javascript">
+        var n, i;
+        var DS = [];
+        n = prompt("Nhap vao so luong thiet bi : ");
+        for(i=0;i<n;i++)
+        {
+            DS[i] = prompt("Nhap vao ten thiet bi : ", "");
+        }
+        document.write("<table border = '1'>");
+        document.write("<tr><th> ten thiet bi </th></tr>");
+        for(i=0;i<DS.length;i++)
+        {
+            if(DS[i] == "computer"){
+                document.write("tr>");
+                document.write("<td>" + DS[i] + "</td>");
+                document.write("</tr>");
+            }
+        }
+        document.write("</table>");
+    </script>
+</body>
+</html>

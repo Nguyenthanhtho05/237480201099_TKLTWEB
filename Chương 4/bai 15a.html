@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script language="Javascript">
+    function capnhat()
+    {
+        document.title = tieude.value;
+        document.bgColor = maunen.value;
+        document.fgcolor = mauchu.value;
+        window.defaultStatus = trangthai.value;    }
+    </script>
+    <h2> 
+        nhap vao cac gia tri va nhan nut thay doi
+    </h2>
+    <input type="text" name="tieude" value="nhap tieu de">
+    <input type="text" name="maunen" value="nhap mau nen vao day"> <br>
+    <input type="text" name="mauchu" value="nhap mau chu vao day"> 
+    <input type="text" name="trangthai" value="nhap trang thai vao day"> <br>
+    <input type="button" name="thay doi" value="capnhat()" onclick="capnhat()">
+
+</body>
+</html>

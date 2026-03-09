@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="sohang1" > 
+    <input type="text" id="sohang2" > =
+    <input type="text" id="ketqua">
+
+    <br><br>
+    <input type="radio" name="pheptinh" value="cong" >cong
+    
+    <input type="radio" name="pheptinh" value="tru" >tru
+   
+    <input type="radio" name="pheptinh" value="nhan" >nhan
+    
+    <input type="radio" name="pheptinh" value="chia" >chia
+
+    <br><br>
+    <input type="button" value="tinh" 
+    onclick="
+    var x=parseFloat(sohang1.value);
+    var y=parseFloat(sohang2.value);
+    var pheptinh=document.querySelector('input[name=pheptinh]:checked').value;
+    if(pheptinh=='cong')
+        ketqua.value=x+y;
+    
+    if(pheptinh=='tru')
+        ketqua.value=x-y;
+   
+    if(pheptinh=='nhan')
+        ketqua.value=x*y;
+
+    if(pheptinh=='chia')
+        ketqua.value=x/y;
+    ">
+</body>
+</html>
