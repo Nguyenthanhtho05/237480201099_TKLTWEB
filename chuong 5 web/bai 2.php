@@ -11,10 +11,10 @@
     $lop = "12a1";
     $diem = 8.9;
 
-    echo "ho ten: " $hoten . "<br>";
-    echo "ngay sinh: " $ngaysinh . "<br>";
-    echo "lop: " $lop . "<br>";
-    echo "diem: " $diem . "<br>";
+    echo "ho ten: " . $hoten . "<br>";
+    echo "ngay sinh: " . $ngaysinh . "<br>";
+    echo "lop: " . $lop . "<br>";
+    echo "diem: " . $diem;
     ?>
 
 
