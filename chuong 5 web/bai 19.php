@@ -5,7 +5,19 @@
     <title>Document</title>
 </head>
 <body>
-    <input type="button" value="Gửi" onclick="alert('Bạn đã click chuột vào nút')">
-    <input type="text" onclick="alert('Bạn đã click chuột vào textbox')">
+    <?php
+
+echo "Chao ban <br>";
+
+if(isset($_COOKIE["time"])){
+
+echo "Lan truy cap truoc: ";
+echo date("d/m/Y H:i:s",$_COOKIE["time"]);
+
+}
+
+setcookie("time",time(),time()+600);
+
+?>
 </body>
 </html>

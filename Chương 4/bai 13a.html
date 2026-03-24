@@ -5,6 +5,17 @@
     <title>Document</title>
 </head>
 <body>
+    <script>
+        function Tong(){
+            let a = parseFloat(document.getElementById("Sohang1").value);
+            let b = parseFloat(document.getElementById("Sohang2").value);
+            if (isNaN(a) || isNaN(b)) {
+                alert("Vui long nhap so hop le!");
+                return;}
+            document.getElementById("KetQua").value = a + b;
+        }
+    </script>
+
     <input type="text" id="sohang1" > +
     <input type="text" id="sohang2" > =
     <input type="text" id="ketqua">

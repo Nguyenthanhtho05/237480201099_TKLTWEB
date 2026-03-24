@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function Tinh(){
+    var nam = new Date().getFullYear();
+
+    var namvao = document.getElementById("NamVaoLam").value;
+    var heso = document.getElementById("HeSo").value;
+    var luongcs = document.getElementById("LuongCoSo").value;
+
+    var luongcb = heso * luongcs;
+    var phucap = luongcb * 0.25;
+    var thamnien = nam - namvao;
+    var thanhtien = luongcb + phucap;
+
+    document.getElementById("LuongCoBan").value = luongcb;
+    document.getElementById("PhuCap").value = phucap;
+    document.getElementById("ThamNien").value = thamnien;
+    document.getElementById("ThanhTien").value = thanhtien;
+}
+</script>
+</head>
+
+<body>
+
+HoTen: <input><br><br>
+
+NamVaoLam:
+<input id="NamVaoLam" onkeyup="Tinh()"><br><br>
+
+HeSo:
+<input id="HeSo" onkeyup="Tinh()"><br><br>
+
+LuongCoSo:
+<input id="LuongCoSo" onkeyup="Tinh()"><br><br>
+
+LuongCoBan:
+<input id="LuongCoBan"><br><br>
+
+PhuCap:
+<input id="PhuCap"><br><br>
+
+ThamNien:
+<input id="ThamNien"><br><br>
+
+ThanhTien:
+<input id="ThanhTien">
+</body>
+</html>

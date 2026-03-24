@@ -1,0 +1,44 @@
+<html>
+<head>
+<script>
+function them(x){
+document.getElementById("kq").value += x;
+}
+
+function tinh(){
+document.getElementById("kq").value =
+eval(document.getElementById("kq").value);
+}
+
+function xoa(){
+document.getElementById("kq").value="";
+}
+</script>
+</head>
+
+<body>
+
+<input id="kq"><br><br>
+
+<button onclick="them('7')">7</button>
+<button onclick="them('8')">8</button>
+<button onclick="them('9')">9</button>
+<button onclick="them('+')">+</button><br>
+
+<button onclick="them('4')">4</button>
+<button onclick="them('5')">5</button>
+<button onclick="them('6')">6</button>
+<button onclick="them('-')">-</button><br>
+
+<button onclick="them('1')">1</button>
+<button onclick="them('2')">2</button>
+<button onclick="them('3')">3</button>
+<button onclick="them('*')">*</button><br>
+
+<button onclick="them('0')">0</button>
+<button onclick="them('/')">/</button>
+<button onclick="tinh()">=</button>
+<button onclick="xoa()">C</button>
+
+</body>
+</html>

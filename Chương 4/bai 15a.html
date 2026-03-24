@@ -3,24 +3,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function CapNhat()
+        {
+            let tieuDe = document.getElementById("TieuDe").value;
+            let mauNen = document.getElementById("MauNen").value;
+            let mauChu = document.getElementById("MauChu").value;
+            let trangThai = document.getElementById("TrangThai").value;
+
+            document.title = tieuDe;
+            document.body.style.backgroundColor = mauNen;
+            document.body.style.color = mauChu;
+            window.status = trangThai;
+        }
+    </script>
 </head>
 <body>
-    <script language="Javascript">
-    function capnhat()
-    {
-        document.title = tieude.value;
-        document.bgColor = maunen.value;
-        document.fgcolor = mauchu.value;
-        window.defaultStatus = trangthai.value;    }
-    </script>
-    <h2> 
-        nhap vao cac gia tri va nhan nut thay doi
-    </h2>
-    <input type="text" name="tieude" value="nhap tieu de">
-    <input type="text" name="maunen" value="nhap mau nen vao day"> <br>
-    <input type="text" name="mauchu" value="nhap mau chu vao day"> 
-    <input type="text" name="trangthai" value="nhap trang thai vao day"> <br>
-    <input type="button" name="thay doi" value="capnhat()" onclick="capnhat()">
-
+    <h2>Nhập vào các giá trị và nhấn nút Thay đổi</h2>
+    <input type="text" id="TieuDe" value="Tiêu để mới">
+    <input type="text" id="MauNen" value="Nhập màu vào đây"><br>
+    <input type="text" id="MauChu" value="Nhập màu chữ vào đây">
+    <input type="text" id="TrangThai" value="Nhập dòng trạng thái vào đây"><br>
+    <input type="button" id="ThayDoi" value="Thay đổi" onclick="CapNhat();">
 </body>
 </html>

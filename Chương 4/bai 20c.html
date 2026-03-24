@@ -1,0 +1,61 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+function TinhLuong()
+{
+    var namht = new Date().getFullYear();
+
+    var namvao = document.getElementById("NamVaoLam").value;
+    var heso = document.getElementById("HeSo").value;
+    var luongcs = document.getElementById("LuongCoSo").value;
+
+    var luongcb = heso * luongcs;
+    var phucap = luongcb * 0.25;
+    var thamnien = namht - namvao;
+    var thanhtien = luongcb + phucap;
+
+    document.getElementById("LuongCoBan").value = luongcb;
+    document.getElementById("PhuCap").value = phucap;
+    document.getElementById("ThamNien").value = thamnien;
+    document.getElementById("ThanhTien").value = thanhtien;
+}
+</script>
+
+</head>
+
+<body>
+
+Họ tên:
+<input type="text" id="HoTen"><br><br>
+
+Năm vào làm:
+<input type="text" id="NamVaoLam"><br><br>
+
+Hệ số:
+<input type="text" id="HeSo"><br><br>
+
+Lương cơ sở:
+<input type="text" id="LuongCoSo"><br><br>
+
+Lương cơ bản:
+<input type="text" id="LuongCoBan"><br><br>
+
+Phụ cấp:
+<input type="text" id="PhuCap"><br><br>
+
+Thâm niên:
+<input type="text" id="ThamNien"><br><br>
+
+Thành tiền:
+<input type="text" id="ThanhTien"><br><br>
+
+<button onclick="TinhLuong()">Tính lương</button>
+
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+function Tinh(){
+var a=parseFloat(document.getElementById("a").value);
+var b=parseFloat(document.getElementById("b").value);
+var op=document.getElementById("pt").value;
+var kq;
+
+if(op=="+") kq=a+b;
+if(op=="-") kq=a-b;
+if(op=="*") kq=a*b;
+if(op=="/") kq=a/b;
+
+document.getElementById("kq").value=kq;
+}
+</script>
+</head>
+
+<body>
+
+Số 1: <input id="a"><br>
+Số 2: <input id="b"><br>
+
+<select id="pt">
+<option value="+">Cộng</option>
+<option value="-">Trừ</option>
+<option value="*">Nhân</option>
+<option value="/">Chia</option>
+</select>
+
+<button onclick="Tinh()">Tính</button><br><br>
+
+Kết quả: <input id="kq">
+</body>
+</html>
