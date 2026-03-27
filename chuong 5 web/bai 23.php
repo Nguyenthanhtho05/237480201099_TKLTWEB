@@ -1,21 +1,21 @@
 <?php
-// 1. XỬ LÝ UPLOAD FILE
+
 $thong_bao = "";
 
 if (isset($_POST['btn_upload'])) {
     $folder = "Tailieu/";
     
-    // Tự động tạo thư mục Tailieu nếu chưa tồn tại
+    
     if (!is_dir($folder)) {
         mkdir($folder, 0777, true);
     }
 
-    // Lấy tên file và đường dẫn đích
+    
     $file_name = $_FILES['file_tai_lieu']['name'];
     $file_tmp = $_FILES['file_tai_lieu']['tmp_name'];
     $target_path = $folder . basename($file_name);
 
-    // Kiểm tra và di chuyển file từ bộ nhớ tạm vào thư mục Tailieu
+   
     if (move_uploaded_file($file_tmp, $target_path)) {
         $thong_bao = "<p style='color:green;'><b>Thành công:</b> Đã upload file <i>$file_name</i> vào thư mục <b>Tailieu/</b></p>";
     } else {

@@ -1,26 +1,26 @@
 <?php
-// 1. XỬ LÝ UPLOAD NHIỀU FILE
+
 $thong_bao = "";
 
 if (isset($_POST['btn_upload_multi'])) {
     $folder = "BoSuuTap/";
     
-    // Tự động tạo thư mục BoSuuTap nếu chưa có
+    
     if (!is_dir($folder)) {
         mkdir($folder, 0777, true);
     }
 
-    // Lấy mảng dữ liệu từ form
+    
     $files = $_FILES['anh_bo_suu_tap'];
     $count_success = 0;
     $count_error = 0;
 
-    // Duyệt qua từng file được chọn
+    
     foreach ($files['name'] as $index => $name) {
         $tmp_name = $files['tmp_name'][$index];
         $target_path = $folder . basename($name);
 
-        // Kiểm tra nếu tên file không rỗng thì mới tiến hành upload
+       
         if (!empty($name)) {
             if (move_uploaded_file($tmp_name, $target_path)) {
                 $count_success++;
@@ -56,7 +56,7 @@ if (isset($_POST['btn_upload_multi'])) {
     <h3>Danh sách file đã upload trong BoSuuTap/:</h3>
     <ul>
         <?php
-        // Hiển thị danh sách file để bạn dễ kiểm tra
+        
         if (is_dir($folder)) {
             $dir_files = scandir($folder);
             foreach ($dir_files as $file) {

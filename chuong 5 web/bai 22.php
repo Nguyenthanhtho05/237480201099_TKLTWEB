@@ -1,15 +1,15 @@
 <?php
-// 1. XỬ LÝ LƯU COOKIE (Phải đặt ở đầu file, trước mọi mã HTML)
+
 $thong_bao = "";
 if (isset($_POST['btn_save'])) {
     $ten = $_POST['ten_kh'];
     $sdt = $_POST['sdt_kh'];
 
-    // Tạo cookie lưu trữ trong 10 phút (10 phút * 60 giây = 600)
+    
     setcookie("khach_hang", $ten, time() + 600, "/");
     setcookie("dien_thoai", $sdt, time() + 600, "/");
     
-    // Load lại trang để trình duyệt cập nhật cookie mới ngay lập tức
+    
     header("Location: " . $_SERVER['PHP_SELF'] . "?status=success");
     exit();
 }
